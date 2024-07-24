@@ -1,0 +1,17 @@
+Package: marshalltools
+Type: Package
+Title: Customized functions for everyday bioinformatics problems
+Version: 0.0.1
+Author: Marcel Ferreira
+Maintainer: Marcel Ferreira <marcel.ferreira@unesp.br>
+Description: Created to solve daily problems in my bioinformatics analysis.
+    No warranty.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr,
+    tidyr,
+    tibble,
+    readr
