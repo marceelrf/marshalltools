@@ -2,6 +2,7 @@
 
 export(mrf_deseq2_getDegs)
 export(mrf_deseq2_getTab)
+export(mrf_gsea_rank)
 import(dplyr)
 import(tibble)
 import(tidyr)

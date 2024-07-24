@@ -37,7 +37,7 @@ mrf_deseq2_getDegs <- function(x,
 
   x %>%
     drop_na() %>%
-    mutate(Cond = case_when(
+    mutate("Cond" = case_when(
       logFC > 1 & pvalue < 0.05 ~ "Up",
       logFC < -1 & pvalue < 0.05 ~ "Down",
       TRUE ~ "Ns"
