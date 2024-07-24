@@ -15,3 +15,5 @@ Imports:
     tidyr,
     tibble,
     readr
+URL: https://github.com/marceelrf/marshalltools
+BugReports: https://github.com/marceelrf/marshalltools/issues
