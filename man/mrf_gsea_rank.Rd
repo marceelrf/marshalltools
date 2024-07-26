@@ -4,12 +4,12 @@
 \alias{mrf_gsea_rank}
 \title{Generate Gene Ranking for GSEA}
 \usage{
-mrf_gsea_rank(x, logFC = 0.5, padj = 0.05)
+mrf_gsea_rank(x, logFC = 1, padj = 0.05)
 }
 \arguments{
 \item{x}{A data frame or matrix containing gene expression data with row names as gene symbols.}
 
-\item{logFC}{Numeric, the log2 fold change threshold for significance. Default is 0.5.}
+\item{logFC}{Numeric, the log2 fold change threshold for significance. Default is 1.}
 
 \item{padj}{Numeric, the adjusted p-value threshold for significance. Default is 0.05.}
 }

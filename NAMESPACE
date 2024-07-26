@@ -3,6 +3,7 @@
 export(mrf_deseq2_getDegs)
 export(mrf_deseq2_getTab)
 export(mrf_gsea_rank)
+export(util_createCond)
 import(dplyr)
 import(tibble)
 import(tidyr)

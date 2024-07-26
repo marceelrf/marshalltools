@@ -3,7 +3,7 @@
 #' This function generates a ranked list of genes for Gene Set Enrichment Analysis (GSEA) based on specified log fold change and adjusted p-value thresholds.
 #'
 #' @param x A data frame or matrix containing gene expression data with row names as gene symbols.
-#' @param logFC Numeric, the log2 fold change threshold for significance. Default is 0.5.
+#' @param logFC Numeric, the log2 fold change threshold for significance. Default is 1.
 #' @param padj Numeric, the adjusted p-value threshold for significance. Default is 0.05.
 #'
 #' @return A named numeric vector containing the log2 fold change values of genes that meet the specified thresholds, ranked in descending order.
@@ -27,17 +27,16 @@
 #' @import tibble
 #' @export
 mrf_gsea_rank <- function(x,
-                          logFC = .5,
+                          logFC = 1,
                           padj = 0.05){
 
   x %>%
-    rownames_to_column(var = "Gene") %>%
-    mutate(sig = case_when(logFC > logFC & padj < padj ~ "Up",
-                           logFC < -logFC & padj < padj ~ "Down",
-                           TRUE ~ "Ns")) %>%
-    filter(sig != "Ns") %>%
-    select(Gene, logFC) %>%
-    arrange(desc(logFC)) %>%
-    deframe()
+    tibble::rownames_to_column(var = "Gene") %>%
+    util_createCond(logFC = logFC,
+                    pvalue = padj) %>%
+    dplyr::filter(Cond != "Ns") %>%
+    dplyr::select(Gene, logFC) %>%
+    dplyr::arrange(desc(logFC)) %>%
+    tibble::deframe()
 }
 

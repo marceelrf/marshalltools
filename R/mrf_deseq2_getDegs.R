@@ -31,19 +31,12 @@
 mrf_deseq2_getDegs <- function(x,
                                logFC = 1,
                                pvalue = 0.05){
-  require(dplyr)
-  require(tidyr)
-  require(tibble)
 
   x %>%
-    drop_na() %>%
-    mutate("Cond" = case_when(
-      logFC > 1 & pvalue < 0.05 ~ "Up",
-      logFC < -1 & pvalue < 0.05 ~ "Down",
-      TRUE ~ "Ns"
-    )) %>%
-    filter(Cond != "Ns") %>%
-    rownames_to_column("Symbol") %>%
-    pull("Symbol")
+    util_createCond(logFC = logFC,
+                    pvalue = pvalue) %>%
+    dplyr::filter(Cond != "Ns") %>%
+    tibble::rownames_to_column("Symbol") %>%
+    dplyr::pull("Symbol")
 }
 
