@@ -14,6 +14,11 @@ Imports:
     dplyr,
     tidyr,
     tibble,
-    readr
+    readr,
+    remotes
+Remotes:
+  marceelrf/RcppFaddeeva
+Suggests:
+  RcppFaddeeva
 URL: https://github.com/marceelrf/marshalltools
 BugReports: https://github.com/marceelrf/marshalltools/issues
