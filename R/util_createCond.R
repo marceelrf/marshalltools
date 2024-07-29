@@ -38,8 +38,8 @@ util_createCond <- function(x,
   x %>%
     tidyr::drop_na() %>%
     dplyr::mutate(Cond = dplyr::case_when(
-      logFC > 1 & pvalue < 0.05 ~ "Up",
-      logFC < -1 & pvalue < 0.05 ~ "Down",
+      logFC > logFC & pvalue < pvalue ~ "Up",
+      logFC < -logFC & pvalue < pvalue ~ "Down",
       TRUE ~ "Ns"
     ))
 }

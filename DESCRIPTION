@@ -15,10 +15,11 @@ Imports:
     tidyr,
     tibble,
     readr,
-    remotes
+    remotes,
+    RcppFaddeeva,
+    VennDiagram,
+    ggplot2
 Remotes:
   marceelrf/RcppFaddeeva
-Suggests:
-  RcppFaddeeva
 URL: https://github.com/marceelrf/marshalltools
 BugReports: https://github.com/marceelrf/marshalltools/issues
