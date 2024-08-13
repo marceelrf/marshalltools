@@ -14,11 +14,6 @@ bioinformatic analysis.
 You can install the development version of marshalltools like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages("devtools")  # or install.packages("remotes")
+devtools::install_github("marceelrf/marshalltools") # or remotes::install_github("marceelrf/marshalltools")
 ```
-
-# Some useful keyboard shortcuts for package authoring (remove later):
-
-- Install Package: ‘Ctrl + Shift + B’  
-- Check Package: ‘Ctrl + Shift + E’  
-- Test Package: ‘Ctrl + Shift + T’
