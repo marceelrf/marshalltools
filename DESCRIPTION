@@ -18,7 +18,8 @@ Imports:
     remotes,
     RcppFaddeeva,
     VennDiagram,
-    ggplot2
+    ggplot2,
+    crayon
 Remotes:
   marceelrf/RcppFaddeeva
 URL: https://github.com/marceelrf/marshalltools

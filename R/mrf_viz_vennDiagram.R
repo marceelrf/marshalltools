@@ -10,7 +10,6 @@
 #' @param compression A character string specifying the type of compression for the output file. Default is "lzw".
 #' @param cex Numeric, the scaling factor for the text in the diagram. Default is 2.
 #' @param fontface A character string specifying the font face for the text. Default is "bold".
-#' @param fill A character vector specifying the fill colors for the sets. Default is an empty string.
 #' @param ... Additional arguments passed to the `venn.diagram` function.
 #'
 #' @return A Venn diagram saved to the specified file.

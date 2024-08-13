@@ -13,7 +13,7 @@ mrf_viz_vennDiagram(
   compression = "lzw",
   cex = 2,
   fontface = "bold",
-  fill = ""
+  ...
 )
 }
 \arguments{
@@ -33,7 +33,7 @@ mrf_viz_vennDiagram(
 
 \item{fontface}{A character string specifying the font face for the text. Default is "bold".}
 
-\item{fill}{A character vector specifying the fill colors for the sets. Default is an empty string.}
+\item{...}{Additional arguments passed to the `venn.diagram` function.}
 }
 \value{
 A Venn diagram saved to the specified file.
