@@ -1,7 +1,7 @@
 Package: marshalltools
 Type: Package
 Title: Customized functions for everyday bioinformatics problems
-Version: 0.0.2
+Version: 0.0.3
 Author: Marcel Ferreira
 Maintainer: Marcel Ferreira <marcel.ferreira@unesp.br>
 Description: Created to solve daily problems in my bioinformatics analysis.

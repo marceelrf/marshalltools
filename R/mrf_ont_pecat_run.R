@@ -18,12 +18,12 @@
 mrf_ont_pecat_run <- function(){
 
 
-  library(crayon)
+  #library(crayon)
   cfgfile_list <-
     list.files(pattern = "_cfgfile$")
 
-  hg_theme <- red$bold$underline
-  number_theme <- silver$bold$underline
+  hg_theme <- crayon::red$bold$underline
+  number_theme <- crayon::silver$bold$underline
 
   gene <- gsub(pattern = "_cfgfile$",replacement = "",cfgfile_list)
 
