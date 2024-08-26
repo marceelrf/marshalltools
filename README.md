@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# marshalltools
+# marshalltools <img src="man/figures/logo.png" align="right" height="138" alt="" />
 
 <!-- badges: start -->
 
@@ -20,3 +20,5 @@ You can install the development version of marshalltools like so:
 install.packages("devtools")  # or install.packages("remotes")
 devtools::install_github("marceelrf/marshalltools") # or remotes::install_github("marceelrf/marshalltools")
 ```
+
+<!-- badges: start -->
